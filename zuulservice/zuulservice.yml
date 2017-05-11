@@ -4,8 +4,8 @@ zuul.routes.pupilservice: /pupil/**
 zuul.routes.addressservice: /address/**
 zuul.sensitiveHeaders: Cookie,Set-Cookie
 zuul.debug.request: true
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 15000
-hystrix.command.pupilservice.execution.isolation.thread.timeoutInMilliseconds: 10000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 30000
+hystrix.command.pupilservice.execution.isolation.thread.timeoutInMilliseconds: 20000
 hystrix.command.addressservice.execution.isolation.thread.timeoutInMilliseconds: 5000
 pupilservice.ribbon.ReadTimeout: 10000
 addressservice.ribbon.ReadTimeout: 5000
